@@ -36,7 +36,7 @@ function App() {
     if(user) {
       getImages()
     }
-  },[user])
+  })
 
   async function magicLinkLogin() {
     const { data, error } = await supabase.auth.signInWithOtp({
